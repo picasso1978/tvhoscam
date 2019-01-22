@@ -186,8 +186,8 @@ do
        2)
            echo "Installing Tvheadend Server"
 		sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 379CE192D401AB61
-		echo "deb http://apt.tvheadend.org/stable xenial stable" | sudo tee -a /etc/apt/sources.list
-		echo "deb http://apt.tvheadend.org/stable xenial unstable" | sudo tee -a /etc/apt/sources.list
+		echo "deb http://apt.tvheadend.org/stable raspbian-xenial main" | sudo tee -a /etc/apt/sources.list.d/tvheadend.list
+		echo "deb http://apt.tvheadend.org/stable raspbian-xenial main" | sudo tee -a /etc/apt/sources.list.d/tvheadend.list
 		$update
 		$inst tvheadend -y
            ;;

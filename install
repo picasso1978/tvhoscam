@@ -186,8 +186,8 @@ do
        2)
            echo "Installing Tvheadend Server"
 		sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 379CE192D401AB61
-		echo "deb https://dl.bintray.com/tvheadend/deb/pool/4.2/tvheadend xenial stable" | sudo tee -a /etc/apt/sources.list
-		echo "deb https://dl.bintray.com/tvheadend/debpool/4.2/tvheadend xenial unstable" | sudo tee -a /etc/apt/sources.list
+		echo "deb https://dl.bintray.com/tvheadend/deb/pool/ xenial stable" | sudo tee -a /etc/apt/sources.list
+		echo "deb https://dl.bintray.com/tvheadend/debpool/ xenial unstable" | sudo tee -a /etc/apt/sources.list
 		$update
 		$inst tvheadend -y
            ;;
